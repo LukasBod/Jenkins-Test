@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<School>
+	<SchoolClass classID="AHIF17" className="4A" schoolYear="2020/21">
+		<RegisterEntryies>
+			<RegisterEntry entyrID="1">
+				<Date>2020-09-14T08:00:00</Date>
+				<EntryType>Erlass</EntryType>
+				<EntryText>Belehrung Hausordnung</EntryText>
+				<Teacher>e.sigl</Teacher>
+			</RegisterEntry>
+			<RegisterEntry entyrID="2">
+				<Date>2020-09-15T08:00:00</Date>
+				<EntryType>Vorkomnisse</EntryType>
+				<EntryText>Klassensprecherwahl</EntryText>
+				<Teacher>e.sigl</Teacher>
+			</RegisterEntry>
+		</RegisterEntryies>
+	</SchoolClass>
+	<SchoolClass classID="AHIF16" className="5A" schoolYear="2020/21">
+		<RegisterEntryies>
+			<RegisterEntry entyrID="1">
+				<Date>2020-09-14T08:00:00</Date>
+				<EntryType>Erlass</EntryType>
+				<EntryText>Belehrung Hausordnung</EntryText>
+				<Teacher>m.buchberger</Teacher>
+			</RegisterEntry>
+			<RegisterEntry entyrID="2">
+				<Date>2020-09-16T10:00:00</Date>
+				<EntryType>Vorkomnisse</EntryType>
+				<EntryText>Klassensprecherwahl</EntryText>
+				<Teacher>m.buchberger</Teacher>
+			</RegisterEntry>
+			<RegisterEntry entyrID="3">
+				<Date>2020-10-01T10:00:00</Date>
+				<EntryType>Erlass</EntryType>
+				<EntryText>Belehrung Covid19 Verordnung</EntryText>
+				<Teacher>m.buchberger</Teacher>
+			</RegisterEntry>
+		</RegisterEntryies>
+	</SchoolClass>
+	<SchoolClass classID="AHIF18" className="3A" schoolYear="2020/21">
+	</SchoolClass>
+</School>

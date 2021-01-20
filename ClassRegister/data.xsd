@@ -1,0 +1,57 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+           attributeFormDefault="unqualified"
+           elementFormDefault="qualified" jaxb:version="2.0">
+
+    <xs:annotation>
+        <xs:appinfo>
+            <jaxb:bindings>
+                <jaxb:globalBindings>
+                    <xjc:javaType name="java.util.Date" xmlType="xs:dateTime"
+                                  adapter="at.htlperg.classregister.model.DateAdapter"/>
+                </jaxb:globalBindings>
+            </jaxb:bindings>
+        </xs:appinfo>
+    </xs:annotation>
+    <xs:element name="Date" type="xs:dateTime"/>
+    <xs:element name="EntryType" type="xs:string"/>
+    <xs:element name="EntryText" type="xs:string"/>
+    <xs:element name="Teacher" type="xs:string"/>
+    <xs:element name="RegisterEntry">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Date"/>
+                <xs:element ref="EntryType"/>
+                <xs:element ref="EntryText"/>
+                <xs:element ref="Teacher"/>
+            </xs:sequence>
+            <xs:attribute type="xs:int" name="entyrID" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RegisterEntryies">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="RegisterEntry" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SchoolClass">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="RegisterEntryies"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="classID" use="optional"/>
+            <xs:attribute type="xs:string" name="className" use="optional"/>
+            <xs:attribute type="xs:string" name="schoolYear" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="School">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="SchoolClass" maxOccurs="unbounded" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+
